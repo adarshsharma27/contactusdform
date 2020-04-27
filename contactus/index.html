@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title> Subscription form</title>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+ <div class="main-container">
+    <div class="content"id="slide">
+   
+            
+              <div class="form " >
+            
+                <i class="fa fa-remove fa-2x" aria-hidden="true" onclick="hide()"></i> 
+                <form   autocomplete="off">
+                      <input type="text" placeholder="Full Name" required  >
+                      <input type="email" placeholder="Email Address" required >
+                      <input type="tel" placeholder="Mobile no." required >
+                    <textarea placeholder="Message"></textarea>
+                    <button type="submit" class="second">Submit Now</button>
+                    <h6>By clicking you agree to our  <span>Terms and Services </span></h6>
+                </form>
+              </div>
+    </div>
+
+ </div>
+ <aside onclick="show()">
+ <i class="fa fa-envelope" aria-hidden="true"></i>
+</aside>
+ <script>
+   function  show(){
+    
+  document.getElementById("slide").style.transform="translateX(0px)";
+  document.getElementById("slide").style.display="flex";
+ 
+}
+function  hide(){
+  
+  document.getElementById("slide").style.display="none";
+  
+
+}     
+</script>
+</script>
+</body>
+</html>
